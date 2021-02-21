@@ -87,7 +87,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         }
 
         public void bind(Tweet tweet) {
-            String time = getRelativeTimeAgo(tweet.createAt);
+            String time = getRelativeTimeAgo(tweet.createdAt);
             tvBody.setText(tweet.body);
             tvScreenName.setText(tweet.user.name + " @" + tweet.user.screenName);
             tvTime.setText(time);
